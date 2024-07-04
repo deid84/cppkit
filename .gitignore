@@ -1,3 +1,4 @@
+### Standard .gitignore items ###
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -9,3 +10,24 @@ install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
 _deps
+
+### Folders ###
+[Bb]uild/*
+CMakeCache.*
+CMakeFiles/*
+[Dd]ocs/*
+[Tt]esting/*
+
+### Build Result ###
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
