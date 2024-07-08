@@ -1,5 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+#include "cppkit/version.hpp"
 
 int main(int, char**){
-    printf("Hello, from cppkit 5\n");
+    std::cout << "welcome to cppkit: " << CPPKIT_VERSION << std::endl;
 }
