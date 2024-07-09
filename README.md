@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-<a rel="license" href="LICENSE"><img alt="Apache 2.0" src="https://img.shields.io/badge/license-Apache_2.0-yellow.svg"/></a> <img alt="Static Badge" src="https://img.shields.io/badge/platforms-linux_windows_mac-limegreen">
+<a rel="license" href="LICENSE"><img alt="Apache 2.0" src="https://img.shields.io/badge/license-Apache_2.0-yellow.svg"/></a> <img alt="Static Badge" src="https://img.shields.io/badge/platforms-Linux%20%7C%20Windows%20%7C%20Mac-limegreen">
  <img alt="languages-cmake-c++" src="https://img.shields.io/badge/languages-CMake%20%7C%20C%2B%2B-blue.svg"/> <img alt="goal-progress-80" src="https://img.shields.io/badge/goal%20progress-10%25-orange.svg"/>
 </p>
 
