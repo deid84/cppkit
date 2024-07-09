@@ -16,7 +16,7 @@ _deps
 .cache/
 CMakeCache.*
 CMakeFiles/*
-[Dd]ocs/*
+[Dd]oc/*
 [Tt]esting/*
 
 ### Build Result ###
@@ -30,5 +30,6 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
+[Ll]ib/
 [Oo]bj/
 [Ll]og/
