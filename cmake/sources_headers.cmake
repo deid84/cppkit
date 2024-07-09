@@ -8,7 +8,7 @@ set(exe_sources
 )
 
 set(headers
-    include/cppkit/cli.hpp
+    include/${PROJECT_NAME}/cli.hpp
 )
 
 set(test_sources
