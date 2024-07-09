@@ -13,6 +13,7 @@ project(
 # cmake files include
 #
 include(cmake/compiler_warnings.cmake)
+include(cmake/doxygen.cmake)
 include(cmake/format.cmake)
 include(cmake/settings.cmake)
 include(cmake/sources_headers.cmake)
@@ -116,16 +117,16 @@ message(STATUS "Added all header and implementation files.\n")
 set_target_properties(
     ${PROJECT_NAME}
     PROPERTIES
-    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE}"
-    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE}"
-    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin/${CMAKE_BUILD_TYPE}"
+    ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib/${CMAKE_BUILD_TYPE}"
+    LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib/${CMAKE_BUILD_TYPE}"
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}"
 )
 if(${PROJECT_NAME}_BUILD_EXECUTABLE AND ${PROJECT_NAME}_ENABLE_UNIT_TESTING)
     set_target_properties(
         ${PROJECT_NAME}_LIB
         PROPERTIES
-        ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE}"
-        LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE}"
+        ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib/${CMAKE_BUILD_TYPE}"
+        LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib/${CMAKE_BUILD_TYPE}"
         OUTPUT_NAME ${PROJECT_NAME}
     )
 endif()
@@ -208,7 +209,7 @@ else()
     add_library(${PROJECT_NAME}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 endif()
 
-message(STATUS, "Project is now aliased as ${PROJECT_NAME}::${PROJECT_NAME}.\n")
+message(STATUS "Project is now aliased as ${PROJECT_NAME}::${PROJECT_NAME}.\n")
 
 
 #
@@ -277,7 +278,7 @@ install(
     include
 )
 
-message(STATUS, "Install targets successfully built. Install with `cmake --build <build_directory> --target install --config <build_config>`.")
+message(STATUS "Install targets successfully built. Install with `cmake --build <build_directory> --target install --config <build_config>`.")
 
 
 #
